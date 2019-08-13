@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Composite Micro Frontends</title>
+  <link rel="shortcut icon" href="favicon.png">
+</head>
+<body>
+  <pre>
+    1. prefix="Mr." -> attribute
+
+    2. document.querySelector('itcorpo-employee-card').employee = {
+      firstName: 'Mark',
+      lastName: "Twain"
+    } -> property
+
+    * property is being rotated in this demo
+  </pre>
+  <itcorpo-employee-card prefix="Mr."></itcorpo-employee-card>
+
+  <hr />
+
+  <itcorpo-employee-list></itcorpo-employee-list>
+  <script src="bundle.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

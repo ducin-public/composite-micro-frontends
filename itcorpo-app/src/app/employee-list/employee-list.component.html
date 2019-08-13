@@ -1,0 +1,11 @@
+all: {{ employees.length }}
+
+<ol>
+  <ng-container *ngFor="let e of employees">
+    <input type="checkbox" [checked]="isChecked(e)" (change)="toggle(e)" />
+    <itcorpo-employee-card
+      [prefix]="'Mister'"
+      [employee]="e"
+    ></itcorpo-employee-card>
+  </ng-container>
+</ol>
